@@ -1,4 +1,5 @@
 #include  <iostream>
+setlocale (0, ".1251")
 using namespace std;
 
 int main() {
