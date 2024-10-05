@@ -35,7 +35,7 @@ cout<<"Загальна сума числе:"<<sumTotal<<endl;
 
 //Складемо суми і приводимо результат до дробного типу 
 double result = (sumEven+sumOdd+sumTotal)/2.0;
-cout<<"Результат:";
+cout<<"Результат:"<<result;
 
 return 0;
  }
