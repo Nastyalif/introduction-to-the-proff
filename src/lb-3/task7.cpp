@@ -114,8 +114,7 @@ void runAllFunctions()
     std::cout << "Площа квадрата зі стороною 4: " << area(4) << std::endl;
     std::cout << "Площа прямокутника 5 x 3: " << area(5, 3) << std::endl;
     std::cout << "Площа кола з радіусом 2: " << area(2, true) << std::endl;
-    std::cout << "Площа трикутника з основою 6 та висотою 4: " << area(6, 4) << std::endl;
-
+    std::cout << "Площа трикутника з основою 6 та висотою 4: " << area(6, 4) << std::endl; 
     // 4. Виклик swap
     std::cout << "Перед swap: a = " << a << ", b = " << b << std::endl;
     swapByReference(a, b);
