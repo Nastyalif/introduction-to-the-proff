@@ -24,17 +24,19 @@ int main()
     cout << "Сума рядків: " << sum(str1, str2) << endl;
 
     return 0;
-    }
-        int sum(int a, int b)
-        {
-            return a + b;
-        }
-        double sum(double a, double b)
-    {
-        return a + b;
-    }
+}
 
-    string sum(string a, string b)
-    {
-        return a + b;
-    }
+int sum(int a, int b)
+{
+    return a + b;
+}
+
+double sum(double a, double b)
+{
+    return a + b;
+}
+
+string sum(string a, string b)
+{
+    return a + b;
+}

@@ -24,7 +24,7 @@ int min(int a, int b)
     return (a < b) ? a : b;
 }
 
-int &min(int &a, int &b)
+double min(double &a, double &b)
 {
     return (a < b) ? a : b;
 }
@@ -44,8 +44,9 @@ double area(double radius, bool isCircle)
     return M_PI * radius * radius;
 }
 
-double area(double base, double height)
+double area(double base, double height, std::string triangle)
 { // Площа трикутника
+    triangle = "triangle";
     return 0.5 * base * height;
 }
 
@@ -105,16 +106,17 @@ void runAllFunctions()
 
     // 2. Виклик min
     int a = 5, b = 10;
+    double c = 5, f = 10;
     int minValueByValue = min(a, b);
-    int &minValueByReference = min(a, b);
+    double minValueByReference = min(c, f);
     std::cout << "Мінімальне значення (за значенням): " << minValueByValue << std::endl;
     std::cout << "Мінімальне значення (за посиланням): " << minValueByReference << std::endl;
 
     // 3. Виклик area
     std::cout << "Площа квадрата зі стороною 4: " << area(4) << std::endl;
-    std::cout << "Площа прямокутника 5 x 3: " << area(5, 3) << std::endl;
+    std::cout << "Площа прямокутника 5 x 3: " << area(5.0, 3.0) << std::endl;
     std::cout << "Площа кола з радіусом 2: " << area(2, true) << std::endl;
-    std::cout << "Площа трикутника з основою 6 та висотою 4: " << area(6, 4) << std::endl; 
+    std::cout << "Площа трикутника з основою 6 та висотою 4: " << area(6, 4,"triangle") << std::endl; 
     // 4. Виклик swap
     std::cout << "Перед swap: a = " << a << ", b = " << b << std::endl;
     swapByReference(a, b);
